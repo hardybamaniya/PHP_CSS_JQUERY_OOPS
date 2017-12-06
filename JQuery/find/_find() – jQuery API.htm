@@ -1,0 +1,760 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0027)http://api.jquery.com/find/ -->
+<HTML lang=en><HEAD><TITLE>.find() – jQuery API</TITLE>
+<META content="text/html; charset=UTF-8" http-equiv=content-type><LINK 
+title="jQuery API » .find() Comments Feed" rel=alternate 
+type=application/rss+xml href="http://api.jquery.com/find/feed/"><LINK title=RSD 
+rel=EditURI type=application/rsd+xml 
+href="http://api.jquery.com/xmlrpc.php?rsd"><LINK rel=wlwmanifest 
+type=application/wlwmanifest+xml 
+href="http://api.jquery.com/wp-includes/wlwmanifest.xml"><LINK 
+title="jQuery API" rel=index href="http://api.jquery.com"><LINK 
+title=.addClass() rel=start href="http://api.jquery.com/addClass/"><LINK 
+title=jQuery.getScript() rel=prev 
+href="http://api.jquery.com/jQuery.getScript/"><LINK title=.slideDown() rel=next 
+href="http://api.jquery.com/slideDown/">
+<META name=GENERATOR content="MSHTML 8.00.7600.16385"><LINK rel=canonical 
+href="http://api.jquery.com/find/"><LINK rel=stylesheet type=text/css 
+href="_find()%20–%20jQuery%20API_files/disqus.css" media=screen><LINK 
+rel=pingback href="http://api.jquery.com/xmlrpc.php"><LINK rel=stylesheet 
+type=text/css href="_find()%20–%20jQuery%20API_files/reset.css"><LINK 
+rel=stylesheet type=text/css href="_find()%20–%20jQuery%20API_files/style.css">
+<SCRIPT type=text/javascript 
+src="_find()%20–%20jQuery%20API_files/jquery.min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="_find()%20–%20jQuery%20API_files/custom.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="_find()%20–%20jQuery%20API_files/jquery.livesearch.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="_find()%20–%20jQuery%20API_files/navi.js"></SCRIPT>
+<LINK rel="shortcut icon" type=image/x-icon 
+href="http://static.jquery.com/favicon.ico"></HEAD>
+<BODY id=jq-interior class="api-jquery-com single">
+<DIV id=jq-siteContain>
+<DIV id=jq-header><A id=jq-siteLogo title="jQuery Home" 
+href="http://jquery.com/"><IMG alt="jQuery: Write Less, Do More." 
+src="_find()%20–%20jQuery%20API_files/logo_jquery_215x53.gif" width=215 
+height=53></A> 
+<DIV id=jq-primaryNavigation>
+<UL>
+  <LI class="jq-jquery jq-current"><A title="jQuery Home" 
+  href="http://jquery.com/">jQuery</A></LI>
+  <LI class=jq-plugins><A title="jQuery Plugins" 
+  href="http://plugins.jquery.com/">Plugins</A></LI>
+  <LI class=jq-ui><A title="jQuery UI" href="http://jqueryui.com/">UI</A></LI>
+  <LI class=jq-meetup><A title="jQuery Meetups" 
+  href="http://meetups.jquery.com/">Meetups</A></LI>
+  <LI class=jq-forum><A title="jQuery Forum" 
+  href="http://forum.jquery.com/">Forum</A></LI>
+  <LI class=jq-blog><A title="jQuery Blog" 
+  href="http://blog.jquery.com/">Blog</A></LI>
+  <LI class=jq-about><A title="About jQuery" 
+  href="http://jquery.org/about">About</A></LI>
+  <LI class=jq-donate><A title="Donate to jQuery" 
+  href="http://jquery.org/donate">Donate</A></LI></UL></DIV><!-- /#primaryNavigation -->
+<DIV id=jq-secondaryNavigation>
+<UL>
+  <LI class="jq-download jq-first"><A 
+  href="http://docs.jquery.com/Downloading_jQuery">Download</A></LI>
+  <LI class="jq-documentation jq-current"><A 
+  href="http://docs.jquery.com/">Documentation</A></LI>
+  <LI class=jq-tutorials><A 
+  href="http://docs.jquery.com/Tutorials">Tutorials</A></LI>
+  <LI class=jq-bugTracker><A href="http://dev.jquery.com/">Bug Tracker</A></LI>
+  <LI class="jq-discussion jq-last"><A 
+  href="http://docs.jquery.com/Discussion">Discussion</A></LI></UL></DIV><!-- /#secondaryNavigation -->
+<FORM id=jq-primarySearchForm method=get action=http://api.jquery.com 
+autocomplete="off">
+<DIV><INPUT value=1 type=hidden name=ns0> <LABEL for=jq-primarySearch>Search 
+<SPAN class=jq-jquery>jQuery</SPAN></LABEL> <INPUT accessKey=f 
+id=jq-primarySearch title="Search jQuery" type=text name=s><BUTTON 
+id=jq-searchGoButton name=go type=submit><SPAN>Go</SPAN></BUTTON> </DIV></FORM><!-- 
+				<h1 id="blog-title"><span><a href="http://api.jquery.com/" title="jQuery API" rel="home">jQuery API</a></span></h1>
+				<div id="blog-description">jQuery API Reference</div>
+-->
+<H1>jQuery API</H1></DIV><!-- /#header -->
+<DIV id=jq-content class=jq-clearfix>
+<DIV id=access>
+<DIV class=skip-link><A title="Skip to content" 
+href="http://api.jquery.com/find/#content">Skip to content</A></DIV>
+<DIV id=menu>
+<UL>
+  <LI class="page_item page-item-1295"><A title=api 
+  href="http://api.jquery.com/api/">api</A></LI>
+  <LI class="page_item page-item-1772"><A title=jsonp 
+  href="http://api.jquery.com/jsonp/">jsonp</A></LI></UL></DIV></DIV><!-- #access -->
+<DIV id=jq-primaryContent>
+<DIV id=content>
+<DIV id=post-301 
+class="hentry p1 post publish category-tree-traversal category-1.0 untagged y2009 m11 d14 h07">
+<DIV class=entry-content>
+<DIV class="entry-title roundTop">
+<H1 class=jq-clearfix>.find()</H1>
+<DIV class=entry-meta>Categories: <SPAN class=category><A 
+title="View all posts in Traversing" 
+href="http://api.jquery.com/category/traversing/">Traversing</A> &gt; <A 
+title="View all posts in Tree Traversal" 
+href="http://api.jquery.com/category/traversing/tree-traversal/">Tree 
+Traversal</A></SPAN> </DIV></DIV>
+<DIV id=find1 class="entry method">
+<H2 class="jq-clearfix roundTop section-title"><SPAN class=name>.find( selector 
+)</SPAN> <SPAN class=returns>Returns: <A class=return 
+href="http://docs.jquery.com/Types#jQuery">jQuery</A></SPAN> </H2>
+<DIV class="jq-box roundBottom entry-details">
+<P class=desc><STRONG>Description: </STRONG>Get the descendants of each element 
+in the current set of matched elements, filtered by a selector.</P>
+<UL class=signatures>
+  <LI id=find-selector class=signature>
+  <H4 class=name><SPAN class=versionAdded>version added: <A 
+  href="http://api.jquery.com/category/version/1.0/">1.0</A></SPAN>.find( 
+  selector )</H4>
+  <P class=arguement><STRONG>selector</STRONG>A string containing a selector 
+  expression to match elements against.</P></LI></UL>
+<DIV class=longdesc>
+<P>Given a jQuery object that represents a set of DOM elements, the 
+<CODE>.find()</CODE> method allows us to search through the descendants of these 
+elements in the DOM tree and construct a new jQuery object from the matching 
+elements. The <CODE>.find()</CODE> and <CODE>.children()</CODE> methods are 
+similar, except that the latter only travels a single level down the DOM 
+tree.</P>
+<P>The method accepts a selector expression of the same type that we can pass to 
+the <CODE>$()</CODE> function. The elements will be filtered by testing whether 
+they match this selector.</P>
+<P>Consider a page with a basic nested list on it:</P><PRE>&lt;ul class="level-1"&gt;
+  &lt;li class="item-i"&gt;I&lt;/li&gt;
+  &lt;li class="item-ii"&gt;II
+    &lt;ul class="level-2"&gt;
+      &lt;li class="item-a"&gt;A&lt;/li&gt;
+      &lt;li class="item-b"&gt;B
+        &lt;ul class="level-3"&gt;
+          &lt;li class="item-1"&gt;1&lt;/li&gt;
+          &lt;li class="item-2"&gt;2&lt;/li&gt;
+          &lt;li class="item-3"&gt;3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="item-c"&gt;C&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class="item-iii"&gt;III&lt;/li&gt;
+&lt;/ul&gt;
+</PRE>
+<P>If we begin at item II, we can find list items within it:</P><PRE>$('li.item-ii').find('li').css('background-color', 'red');</PRE>
+<P>The result of this call is a red background on items A, B, 1, 2, 3, and C. 
+Even though item II matches the selector expression, it is not included in the 
+results; only descendants are considered candidates for the match.</P>
+<BLOCKQUOTE>
+  <P>Unlike in the rest of the tree traversal methods, the selector expression 
+  is required in a call to <CODE>.find()</CODE>. If we need to retrieve all of 
+  the descendant elements, we can pass in the universal selector 
+  <CODE>'*'</CODE> to accomplish this.</P></BLOCKQUOTE>
+<P><A href="http://api.jquery.com/jquery/#selector-context">Selector context</A> 
+is implemented with the <CODE>.find()</CODE> <CODE>method;</CODE> therefore, 
+<CODE>$('li.item-ii').find('li')</CODE> is equivalent to <CODE>$('li', 
+'li.item-ii')</CODE>.</P></DIV>
+<H3>Examples:</H3>
+<DIV id=entry-examples class=entry-examples>
+<DIV id=example-0>
+<H4>Example: <SPAN class=desc>Starts with all paragraphs and searches for 
+descendant span elements, same as $("p span")</SPAN> </H4><PRE><CODE class="example demo-code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;&lt;span&gt;Hello&lt;/span&gt;, how are you?&lt;/p&gt;
+&lt;p&gt;Me? I'm &lt;span&gt;good&lt;/span&gt;.&lt;/p&gt;
+&lt;script&gt;
+  $("p").find("span").css('color','red');
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</CODE></PRE>
+<H4>Demo:</H4>
+<DIV class="demo code-demo"></DIV></DIV>
+<DIV id=example-1>
+<H4>Example: <SPAN class=desc>Add spans around each word then add a hover and 
+italicize words with the letter t.</SPAN> </H4><PRE><CODE class="example demo-code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+  p { font-size:20px; width:200px; cursor:default; 
+      color:blue; font-weight:bold; margin:0 10px; }
+  .hilite { background:yellow; }
+  &lt;/style&gt;
+  &lt;script src="http://code.jquery.com/jquery-latest.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;
+  When the day is short
+  find that which matters to you
+  or stop believing
+  &lt;/p&gt;
+&lt;script&gt;
+  var newText = $("p").text().split(" ").join("&lt;/span&gt; &lt;span&gt;");
+  newText = "&lt;span&gt;" + newText + "&lt;/span&gt;";
+
+  $("p").html(newText)
+    .find('span')
+    .hover(function() { 
+      $(this).addClass("hilite"); 
+    },
+      function() { $(this).removeClass("hilite"); 
+    })
+  .end()
+    .find(":contains('t')")
+    .css({"font-style":"italic", "font-weight":"bolder"});
+
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</CODE></PRE>
+<H4>Demo:</H4>
+<DIV class="demo code-demo"></DIV></DIV></DIV></DIV></DIV></DIV></DIV><!-- .post -->
+<H1 id=comments class="roundTop section-title">Comments</H1>
+<DIV class="jq-box roundBottom">
+<UL class=comment-instructions>
+  <LI>
+  <H3 style="MARGIN-TOP: 0px; FONT-SIZE: 1.4em">Support requests, bug reports, 
+  and off-topic comments will be <EM>deleted</EM> without warning.</H3></LI>
+  <LI>Please do post corrections or additional examples for .find() below. We 
+  aim to quickly move corrections into the documentation.</LI>
+  <LI>If you need help, post at the <A 
+  href="http://forum.jquery.com/">forums</A> or in the #jquery IRC channel.</LI>
+  <LI>Report bugs on the <A href="http://dev.jquery.com/newticket/">bug 
+  tracker</A> or the <A 
+  href="http://forum.jquery.com/developing-jquery-core">jQuery Forum</A>.</LI>
+  <LI>Discussions about the API specifically should be addressed in the <A 
+  href="http://forum.jquery.com/developing-jquery-core">Developing jQuery Core 
+  forum</A>.</LI></UL>
+<DIV id=disqus_thread>
+<DIV id=dsq-content>
+<UL id=dsq-comments>
+  <LI id=comment-87830025></LI>
+  <LI id=dsq-comment-87830025>
+  <DIV id=dsq-comment-header-87830025 class=dsq-comment-header><CITE 
+  id=dsq-cite-87830025><SPAN id=dsq-author-user-87830025>Vinh.Luan</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-87830025 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-87830025 class=dsq-comment-message>Can this 
+  function find checked checkbox like this?<BR><BR>var actOpts = 
+  $('.checkbox_list').find('checked');</DIV></DIV></LI>
+  <LI id=comment-87825555></LI>
+  <LI id=dsq-comment-87825555>
+  <DIV id=dsq-comment-header-87825555 class=dsq-comment-header><CITE 
+  id=dsq-cite-87825555><SPAN id=dsq-author-user-87825555>Thesink</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-87825555 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-87825555 class=dsq-comment-message>What is the 
+  difference between using find(): 
+  <BR><BR>$('li.item-ii').find('li').css('background-color', 'red'); 
+  <BR><BR>...and simply doing this: <BR><BR>$('li.item-ii 
+  li').css('background-color', 'red');</DIV></DIV></LI>
+  <LI id=comment-86985379></LI>
+  <LI id=dsq-comment-86985379>
+  <DIV id=dsq-comment-header-86985379 class=dsq-comment-header><CITE 
+  id=dsq-cite-86985379><A id=dsq-author-user-86985379 
+  href="http://twitter.com/nimmbl" rel=nofollow target=_blank>Christopher 
+  Tate</A> </CITE></DIV>
+  <DIV id=dsq-comment-body-86985379 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-86985379 class=dsq-comment-message>How would one 
+  attach a function call to the end of find()? I.E I'm searching through a large 
+  number of elements for items with the same class. I'd like to show some sort 
+  of loader that tells the user that it's processing the find. After the find is 
+  over, I'd like to remove the loader. Is there a better method for doing 
+  this?</DIV></DIV></LI>
+  <LI id=comment-84375506></LI>
+  <LI id=dsq-comment-84375506>
+  <DIV id=dsq-comment-header-84375506 class=dsq-comment-header><CITE 
+  id=dsq-cite-84375506><A id=dsq-author-user-84375506 
+  href="http://pulse.yahoo.com/_RBQOZMRC4JJPPDHFCVTFLNO2HY" rel=nofollow 
+  target=_blank>sheik</A> </CITE></DIV>
+  <DIV id=dsq-comment-body-84375506 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-84375506 class=dsq-comment-message>I accept to use 
+  size()</DIV></DIV></LI>
+  <LI id=comment-68441664></LI>
+  <LI id=dsq-comment-68441664>
+  <DIV id=dsq-comment-header-68441664 class=dsq-comment-header><CITE 
+  id=dsq-cite-68441664><SPAN id=dsq-author-user-68441664>Mm</SPAN> </CITE></DIV>
+  <DIV id=dsq-comment-body-68441664 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-68441664 
+  class=dsq-comment-message>input:not(:first)</DIV></DIV></LI>
+  <LI id=comment-47638801></LI>
+  <LI id=dsq-comment-47638801>
+  <DIV id=dsq-comment-header-47638801 class=dsq-comment-header><CITE 
+  id=dsq-cite-47638801><SPAN id=dsq-author-user-47638801>Bodyscanner</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-47638801 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-47638801 class=dsq-comment-message>Which do you 
+  prefer - x.find('y') or $('y',x)?<BR>Is one faster / more syntactically 
+  correct than other?</DIV></DIV></LI>
+  <LI id=comment-48509453></LI>
+  <LI id=dsq-comment-48509453>
+  <DIV id=dsq-comment-header-48509453 class=dsq-comment-header><CITE 
+  id=dsq-cite-48509453><SPAN id=dsq-author-user-48509453>Peter</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-48509453 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-48509453 class=dsq-comment-message>As it 
+  says:<BR><BR>"Selector context is implemented with the .find() method; 
+  therefore, $('li.item-ii').find('li') is equivalent to $('li', 
+  'li.item-ii')."<BR><BR>I personally prefer the latter because it is more 
+  compact; I suspect it is a millisecond or two slower (as it's an additional 
+  function call)</DIV></DIV></LI>
+  <LI id=comment-31378490></LI>
+  <LI id=dsq-comment-31378490>
+  <DIV id=dsq-comment-header-31378490 class=dsq-comment-header><CITE 
+  id=dsq-cite-31378490><SPAN id=dsq-author-user-31378490>lesgreen</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-31378490 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-31378490 class=dsq-comment-message>To check 
+  whether a DOM element is not found, you can check the length:<BR><BR>var found 
+  = $("p").find("span");<BR>if (found.length == 0) {<BR><BR>}</DIV></DIV></LI>
+  <LI id=comment-33145402></LI>
+  <LI id=dsq-comment-33145402>
+  <DIV id=dsq-comment-header-33145402 class=dsq-comment-header><CITE 
+  id=dsq-cite-33145402><SPAN id=dsq-author-user-33145402>Mitur Binesderti</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-33145402 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-33145402 class=dsq-comment-message>It might be 
+  better to use .size() instead.</DIV></DIV></LI>
+  <LI id=comment-34145467></LI>
+  <LI id=dsq-comment-34145467>
+  <DIV id=dsq-comment-header-34145467 class=dsq-comment-header><CITE 
+  id=dsq-cite-34145467><SPAN id=dsq-author-user-34145467>David Rodrigues</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-34145467 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-34145467 class=dsq-comment-message>.size() is 
+  about 12% slower that .length in V8 engine<BR><BR>but it is a invisible 
+  difference:<BR>- .length ~0,0000032s each<BR>- .size() ~0,0000040s 
+  each<BR><BR>:)</DIV></DIV></LI>
+  <LI id=comment-33161546></LI>
+  <LI id=dsq-comment-33161546>
+  <DIV id=dsq-comment-header-33161546 class=dsq-comment-header><CITE 
+  id=dsq-cite-33161546><A id=dsq-author-user-33161546 
+  href="http://www.learningjquery.com/" rel=nofollow target=_blank>Karl 
+  Swedberg</A> </CITE></DIV>
+  <DIV id=dsq-comment-body-33161546 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-33161546 class=dsq-comment-message>No. Actually 
+  it's better to use .length.</DIV></DIV></LI>
+  <LI id=comment-33215413></LI>
+  <LI id=dsq-comment-33215413>
+  <DIV id=dsq-comment-header-33215413 class=dsq-comment-header><CITE 
+  id=dsq-cite-33215413><SPAN id=dsq-author-user-33215413>Michael</SPAN> 
+  </CITE></DIV>
+  <DIV id=dsq-comment-body-33215413 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-33215413 class=dsq-comment-message>I believe using 
+  size() will do.</DIV></DIV></LI>
+  <LI id=comment-33345119></LI>
+  <LI id=dsq-comment-33345119>
+  <DIV id=dsq-comment-header-33345119 class=dsq-comment-header><CITE 
+  id=dsq-cite-33345119><A id=dsq-author-user-33345119 
+  href="http://www.learningjquery.com/" rel=nofollow target=_blank>Karl 
+  Swedberg</A> </CITE></DIV>
+  <DIV id=dsq-comment-body-33345119 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-33345119 class=dsq-comment-message>Yes, of course 
+  using .size() "will do." But why in the world would you use it instead of 
+  .length? It adds no value and it requires an extra function call. From 
+  jquery.js:<BR>size: function() {<BR>return this.length;<BR>}</DIV></DIV></LI>
+  <LI id=comment-34838252></LI>
+  <LI id=dsq-comment-34838252>
+  <DIV id=dsq-comment-header-34838252 class=dsq-comment-header><CITE 
+  id=dsq-cite-34838252><A id=dsq-author-user-34838252 
+  href="http://zilverdistel.myopenid.com/" rel=nofollow 
+  target=_blank>zilverdistel</A> </CITE></DIV>
+  <DIV id=dsq-comment-body-34838252 class=dsq-comment-body>
+  <DIV id=dsq-comment-message-34838252 class=dsq-comment-message>for 
+  abstraction? I'm also using .length ...</DIV></DIV></LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>
+	var disqus_url = 'http://api.jquery.com/find/ ';
+	var disqus_container_id = 'disqus_thread';
+	var facebookXdReceiverPath = 'http://api.jquery.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+	var DsqLocal = {
+		'trackbacks': [
+		],
+		'trackback_url': 'http://api.jquery.com/find/trackback/'
+	};
+</SCRIPT>
+
+<SCRIPT>
+jQuery(function(){
+  var ds_loaded = false, 
+      top = jQuery("h1:contains(Comments)").offset().top,
+      instructionsCloned = false;
+
+  function check(){
+  	if ( !ds_loaded && jQuery(window).scrollTop() + jQuery(window).height() > top ) {
+  		jQuery.getScript("http://jquery.disqus.com/disqus.js?v=2.0&slug=find&pname=wordpress&pver=2.12");
+  		ds_loaded = true;
+  	} else if ( !instructionsCloned && document.getElementById('dsq-form-area') ) {
+
+  	  var instructions = jQuery('ul.comment-instructions');
+
+  	  instructions.clone().css({
+  	    backgroundColor: instructions.css('backgroundColor'),
+  	    borderWidth: instructions.css('borderWidth'),
+  	    padding: '1em',
+  	    margin: '1em 0'
+  	  }).prependTo('#dsq-form-area');
+  	  instructionsCloned = true;
+  	}
+  }
+
+  jQuery(window).scroll(check);
+
+  check();
+
+});
+</SCRIPT>
+</DIV></DIV><!-- #content --></DIV><!-- #jq-primaryContent -->
+<DIV id=jq-interiorNavigation>
+<H2 class="jq-clearfix roundTop section-title"><A 
+href="http://api.jquery.com/">jQuery API</A></H2>
+<DIV class="roundBottom jq-box">
+<UL class=xoxo>
+  <LI>
+  <UL>
+    <LI><A href="http://api.jquery.com/category/version/1.4.3/">New or Changed 
+    in 1.4.3</A></LI>
+    <LI><A href="http://api.jquery.com/api/">Raw XML API Dump</A></LI>
+    <LI><A href="http://api.jquery.com/browser/">Dynamic API Browser</A></LI>
+    <LI><A href="http://www.packtpub.com/jquery-1-4-reference-guide/book">jQuery 
+    API Book</A></LI></UL></LI></UL><!--
+      <br />
+  		<div class="sideBarFeature">
+    		<strong>Dynamic API Browser</strong>
+        <a href="http://api.jquery.com/browser/" style="border:0px;"><img src="http://static.jquery.com/api/images/badge.jpg" style="border:0px;width:100%;"/></a>
+      </div>
+  		<div class="sideBarFeature">
+    		<strong>jQuery API Book</strong>
+        <a href="http://www.packtpub.com/" style="border-width:0;"><img src="http://static.jquery.com/books/jquery-ref-guide.png" style="border-width:0;"/></a>
+      </div>
+--></DIV>
+<H2 class="jq-clearfix roundTop section-title">Browse the jQuery API</H2>
+<DIV class="roundBottom jq-box">
+<UL class=xoxo>
+  <LI id=categories>
+  <UL>
+    <LI><A href="http://api.jquery.com/">All</A></LI>
+    <LI class="cat-item cat-item-13"><A title="View all posts filed under Ajax" 
+    href="http://api.jquery.com/category/ajax/">Ajax</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-39"><A 
+      title="View all posts filed under Global Ajax Event Handlers" 
+      href="http://api.jquery.com/category/ajax/global-ajax-event-handlers/">Global 
+      Ajax Event Handlers</A> </LI>
+      <LI class="cat-item cat-item-40"><A 
+      title="View all posts filed under Helper Functions" 
+      href="http://api.jquery.com/category/ajax/helper-functions/">Helper 
+      Functions</A> </LI>
+      <LI class="cat-item cat-item-37"><A 
+      title="View all posts filed under Low-Level Interface" 
+      href="http://api.jquery.com/category/ajax/low-level-interface/">Low-Level 
+      Interface</A> </LI>
+      <LI class="cat-item cat-item-38"><A 
+      title="View all posts filed under Shorthand Methods" 
+      href="http://api.jquery.com/category/ajax/shorthand-methods/">Shorthand 
+      Methods</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-7"><A 
+    title="View all posts filed under Attributes" 
+    href="http://api.jquery.com/category/attributes/">Attributes</A> </LI>
+    <LI class="cat-item cat-item-5"><A title="View all posts filed under Core" 
+    href="http://api.jquery.com/category/core/">Core</A> </LI>
+    <LI class="cat-item cat-item-10"><A title="View all posts filed under CSS" 
+    href="http://api.jquery.com/category/css/">CSS</A> </LI>
+    <LI class="cat-item cat-item-51"><A title="View all posts filed under Data" 
+    href="http://api.jquery.com/category/data/">Data</A> </LI>
+    <LI class="cat-item cat-item-50"><A 
+    title="View all posts filed under Dimensions" 
+    href="http://api.jquery.com/category/dimensions/">Dimensions</A> </LI>
+    <LI class="cat-item cat-item-12"><A 
+    title="View all posts filed under Effects" 
+    href="http://api.jquery.com/category/effects/">Effects</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-52"><A 
+      title="View all posts filed under Basics" 
+      href="http://api.jquery.com/category/effects/basics/">Basics</A> </LI>
+      <LI class="cat-item cat-item-55"><A 
+      title="View all posts filed under Custom" 
+      href="http://api.jquery.com/category/effects/custom-effects/">Custom</A> 
+      </LI>
+      <LI class="cat-item cat-item-54"><A 
+      title="View all posts filed under Fading" 
+      href="http://api.jquery.com/category/effects/fading/">Fading</A> </LI>
+      <LI class="cat-item cat-item-53"><A 
+      title="View all posts filed under Sliding" 
+      href="http://api.jquery.com/category/effects/sliding/">Sliding</A> 
+    </LI></UL></LI>
+    <LI class="cat-item cat-item-11"><A 
+    title="View all posts filed under Events" 
+    href="http://api.jquery.com/category/events/">Events</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-36"><A 
+      title="View all posts filed under Browser Events" 
+      href="http://api.jquery.com/category/events/browser-events/">Browser 
+      Events</A> </LI>
+      <LI class="cat-item cat-item-32"><A 
+      title="View all posts filed under Document Loading" 
+      href="http://api.jquery.com/category/events/document-loading/">Document 
+      Loading</A> </LI>
+      <LI class="cat-item cat-item-31"><A 
+      title="View all posts filed under Event Handler Attachment" 
+      href="http://api.jquery.com/category/events/event-handler-attachment/">Event 
+      Handler Attachment</A> </LI>
+      <LI class="cat-item cat-item-66"><A 
+      title="View all posts filed under Event Object" 
+      href="http://api.jquery.com/category/events/event-object/">Event 
+      Object</A> </LI>
+      <LI class="cat-item cat-item-34"><A 
+      title="View all posts filed under Form Events" 
+      href="http://api.jquery.com/category/events/form-events/">Form Events</A> 
+      </LI>
+      <LI class="cat-item cat-item-35"><A 
+      title="View all posts filed under Keyboard Events" 
+      href="http://api.jquery.com/category/events/keyboard-events/">Keyboard 
+      Events</A> </LI>
+      <LI class="cat-item cat-item-33"><A 
+      title="View all posts filed under Mouse Events" 
+      href="http://api.jquery.com/category/events/mouse-events/">Mouse 
+      Events</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-56"><A title="View all posts filed under Forms" 
+    href="http://api.jquery.com/category/forms/">Forms</A> </LI>
+    <LI class="cat-item cat-item-9"><A 
+    title="View all posts filed under Manipulation" 
+    href="http://api.jquery.com/category/manipulation/">Manipulation</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-25"><A 
+      title="View all posts filed under Class Attribute" 
+      href="http://api.jquery.com/category/manipulation/class-attribute/">Class 
+      Attribute</A> </LI>
+      <LI class="cat-item cat-item-29"><A 
+      title="View all posts filed under Copying" 
+      href="http://api.jquery.com/category/manipulation/copying/">Copying</A> 
+      </LI>
+      <LI class="cat-item cat-item-28"><A 
+      title="View all posts filed under DOM Insertion, Around" 
+      href="http://api.jquery.com/category/manipulation/dom-insertion-around/">DOM 
+      Insertion, Around</A> </LI>
+      <LI class="cat-item cat-item-27"><A 
+      title="View all posts filed under DOM Insertion, Inside" 
+      href="http://api.jquery.com/category/manipulation/dom-insertion-inside/">DOM 
+      Insertion, Inside</A> </LI>
+      <LI class="cat-item cat-item-48"><A 
+      title="View all posts filed under DOM Insertion, Outside" 
+      href="http://api.jquery.com/category/manipulation/dom-insertion-outside/">DOM 
+      Insertion, Outside</A> </LI>
+      <LI class="cat-item cat-item-30"><A 
+      title="View all posts filed under DOM Removal" 
+      href="http://api.jquery.com/category/manipulation/dom-removal/">DOM 
+      Removal</A> </LI>
+      <LI class="cat-item cat-item-26"><A 
+      title="View all posts filed under DOM Replacement" 
+      href="http://api.jquery.com/category/manipulation/dom-replacement/">DOM 
+      Replacement</A> </LI>
+      <LI class="cat-item cat-item-23"><A 
+      title="View all posts filed under General Attributes" 
+      href="http://api.jquery.com/category/manipulation/general-attributes/">General 
+      Attributes</A> </LI>
+      <LI class="cat-item cat-item-24"><A 
+      title="View all posts filed under Style Properties" 
+      href="http://api.jquery.com/category/manipulation/style-properties/">Style 
+      Properties</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-41"><A 
+    title="View all posts filed under Miscellaneous" 
+    href="http://api.jquery.com/category/miscellaneous/">Miscellaneous</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-44"><A 
+      title="View all posts filed under Collection Manipulation" 
+      href="http://api.jquery.com/category/miscellaneous/collection-manipulation/">Collection 
+      Manipulation</A> </LI>
+      <LI class="cat-item cat-item-45"><A 
+      title="View all posts filed under Data Storage" 
+      href="http://api.jquery.com/category/miscellaneous/data-storage/">Data 
+      Storage</A> </LI>
+      <LI class="cat-item cat-item-43"><A 
+      title="View all posts filed under DOM Element Methods" 
+      href="http://api.jquery.com/category/miscellaneous/dom-element-methods/">DOM 
+      Element Methods</A> </LI>
+      <LI class="cat-item cat-item-42"><A 
+      title="View all posts filed under Setup Methods" 
+      href="http://api.jquery.com/category/miscellaneous/setup-methods/">Setup 
+      Methods</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-49"><A 
+    title="View all posts filed under Offset" 
+    href="http://api.jquery.com/category/offset/">Offset</A> </LI>
+    <LI class="cat-item cat-item-67"><A 
+    title="View all posts filed under Plugin Authoring" 
+    href="http://api.jquery.com/category/plugin-authoring/">Plugin Authoring</A> 
+    </LI>
+    <LI class="cat-item cat-item-85"><A 
+    title="View all posts filed under Plugins" 
+    href="http://api.jquery.com/category/plugins/">Plugins</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-87"><A 
+      title="View all posts filed under Data Link" 
+      href="http://api.jquery.com/category/plugins/data-link/">Data Link</A> 
+      </LI>
+      <LI class="cat-item cat-item-83"><A 
+      title="View all posts filed under Templates" 
+      href="http://api.jquery.com/category/plugins/templates/">Templates</A> 
+      </LI></UL></LI>
+    <LI class="cat-item cat-item-68"><A 
+    title="View all posts filed under Properties" 
+    href="http://api.jquery.com/category/properties/">Properties</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-59"><A 
+      title="View all posts filed under Properties of jQuery Object Instances" 
+      href="http://api.jquery.com/category/properties/jquery-object-instance-properties/">Properties 
+      of jQuery Object Instances</A> </LI>
+      <LI class="cat-item cat-item-58"><A 
+      title="View all posts filed under Properties of the Global jQuery Object" 
+      href="http://api.jquery.com/category/properties/global-jquery-object-properties/">Properties 
+      of the Global jQuery Object</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-6"><A 
+    title="View all posts filed under Selectors" 
+    href="http://api.jquery.com/category/selectors/">Selectors</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-17"><A 
+      title="View all posts filed under Attribute" 
+      href="http://api.jquery.com/category/selectors/attribute-selectors/">Attribute</A> 
+      </LI>
+      <LI class="cat-item cat-item-16"><A 
+      title="View all posts filed under Basic" 
+      href="http://api.jquery.com/category/selectors/basic-css-selectors/">Basic</A> 
+      </LI>
+      <LI class="cat-item cat-item-61"><A 
+      title="View all posts filed under Basic Filter" 
+      href="http://api.jquery.com/category/selectors/basic-filter-selectors/">Basic 
+      Filter</A> </LI>
+      <LI class="cat-item cat-item-65"><A 
+      title="View all posts filed under Child Filter" 
+      href="http://api.jquery.com/category/selectors/child-filter-selectors/">Child 
+      Filter</A> </LI>
+      <LI class="cat-item cat-item-62"><A 
+      title="View all posts filed under Content Filter" 
+      href="http://api.jquery.com/category/selectors/content-filter-selector/">Content 
+      Filter</A> </LI>
+      <LI class="cat-item cat-item-18"><A 
+      title="View all posts filed under Form" 
+      href="http://api.jquery.com/category/selectors/form-selectors/">Form</A> 
+      </LI>
+      <LI class="cat-item cat-item-60"><A 
+      title="View all posts filed under Hierarchy" 
+      href="http://api.jquery.com/category/selectors/hierarchy-selectors/">Hierarchy</A> 
+      </LI>
+      <LI class="cat-item cat-item-63"><A 
+      title="View all posts filed under Visibility Filter" 
+      href="http://api.jquery.com/category/selectors/visibility-filter-selectors/">Visibility 
+      Filter</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-8"><A 
+    title="View all posts filed under Traversing" 
+    href="http://api.jquery.com/category/traversing/">Traversing</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-20"><A 
+      title="View all posts filed under Filtering" 
+      href="http://api.jquery.com/category/traversing/filtering/">Filtering</A> 
+      </LI>
+      <LI class="cat-item cat-item-22"><A 
+      title="View all posts filed under Miscellaneous Traversing" 
+      href="http://api.jquery.com/category/traversing/miscellaneous-traversal/">Miscellaneous 
+      Traversing</A> </LI>
+      <LI class="cat-item cat-item-21"><A 
+      title="View all posts filed under Tree Traversal" 
+      href="http://api.jquery.com/category/traversing/tree-traversal/">Tree 
+      Traversal</A> </LI></UL></LI>
+    <LI class="cat-item cat-item-14"><A 
+    title="View all posts filed under Utilities" 
+    href="http://api.jquery.com/category/utilities/">Utilities</A> </LI>
+    <LI class="cat-item cat-item-69"><A 
+    title="View all posts filed under Version" 
+    href="http://api.jquery.com/category/version/">Version</A> 
+    <UL class=children>
+      <LI class="cat-item cat-item-70"><A 
+      title="View all posts filed under Version 1.0" 
+      href="http://api.jquery.com/category/version/1.0/">Version 1.0</A> </LI>
+      <LI class="cat-item cat-item-71"><A 
+      title="View all posts filed under Version 1.0.4" 
+      href="http://api.jquery.com/category/version/1.0.4/">Version 1.0.4</A> 
+      </LI>
+      <LI class="cat-item cat-item-72"><A 
+      title="View all posts filed under Version 1.1" 
+      href="http://api.jquery.com/category/version/1.1/">Version 1.1</A> </LI>
+      <LI class="cat-item cat-item-73"><A 
+      title="View all posts filed under Version 1.1.2" 
+      href="http://api.jquery.com/category/version/1.1.1/">Version 1.1.2</A> 
+      </LI>
+      <LI class="cat-item cat-item-74"><A 
+      title="View all posts filed under Version 1.1.3" 
+      href="http://api.jquery.com/category/version/1.1.3/">Version 1.1.3</A> 
+      </LI>
+      <LI class="cat-item cat-item-75"><A 
+      title="View all posts filed under Version 1.1.4" 
+      href="http://api.jquery.com/category/version/1.1.4/">Version 1.1.4</A> 
+      </LI>
+      <LI class="cat-item cat-item-76"><A 
+      title="View all posts filed under Version 1.2" 
+      href="http://api.jquery.com/category/version/1.2/">Version 1.2</A> </LI>
+      <LI class="cat-item cat-item-77"><A 
+      title="View all posts filed under Version 1.2.3" 
+      href="http://api.jquery.com/category/version/1.2.3/">Version 1.2.3</A> 
+      </LI>
+      <LI class="cat-item cat-item-78"><A 
+      title="View all posts filed under Version 1.2.6" 
+      href="http://api.jquery.com/category/version/1.2.6/">Version 1.2.6</A> 
+      </LI>
+      <LI class="cat-item cat-item-79"><A 
+      title="View all posts filed under Version 1.3" 
+      href="http://api.jquery.com/category/version/1.3/">Version 1.3</A> </LI>
+      <LI class="cat-item cat-item-80"><A 
+      title="View all posts filed under Version 1.4" 
+      href="http://api.jquery.com/category/version/1.4/">Version 1.4</A> </LI>
+      <LI class="cat-item cat-item-81"><A 
+      title="View all posts filed under Version 1.4.1" 
+      href="http://api.jquery.com/category/version/1.4.1/">Version 1.4.1</A> 
+      </LI>
+      <LI class="cat-item cat-item-82"><A 
+      title="View all posts filed under Version 1.4.2" 
+      href="http://api.jquery.com/category/version/1.4.2/">Version 1.4.2</A> 
+      </LI>
+      <LI class="cat-item cat-item-90"><A 
+      title="View all posts filed under Version 1.4.3" 
+      href="http://api.jquery.com/category/version/1.4.3/">Version 1.4.3</A> 
+      </LI></UL></LI></UL></LI></UL></DIV></DIV><!-- #jq-interiorNavigation --></DIV><!-- /#secondaryNavigation -->
+<DIV id=jq-footer class=jq-clearfix>
+<DIV id=jq-credits>
+<P id=jq-copyright>© 2010 <A href="http://jquery.org/">The jQuery 
+Project</A></P>
+<P id=jq-hosting>Sponsored by <A class=jq-mediaTemple 
+href="http://mediatemple.net/">Media Temple</A> and <A 
+href="http://jquery.org/sponsors">others</A>.</P></DIV>
+<DIV id=jq-footerNavigation>
+<UL>
+  <LI class="jq-download jq-first"><A 
+  href="http://docs.jquery.com/Downloading_jQuery">Download</A></LI>
+  <LI class=jq-documentation><A 
+  href="http://docs.jquery.com/">Documentation</A></LI>
+  <LI class=jq-tutorials><A 
+  href="http://docs.jquery.com/Tutorials">Tutorials</A></LI>
+  <LI class=jq-bugTracker><A href="http://dev.jquery.com/">Bug Tracker</A></LI>
+  <LI class="jq-discussion jq-last"><A 
+  href="http://docs.jquery.com/Discussion">Discussion</A></LI></UL></DIV><!-- /#jq-footerNavigation --></DIV><!-- /#jq-footer --></DIV><!-- /#siteContain -->
+<SCRIPT type=text/javascript>
+var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-1076265-1']); _gaq.push(['_trackPageview']); _gaq.push(['_setDomainName', '.jquery.com']);
+(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);})();
+</SCRIPT>
+<!-- <script src="/wp-content/themes/jquery.0002/demos.js?v=20100124" type="text/javascript"></script> -->
+<SCRIPT type=text/javascript 
+src="_find()%20–%20jQuery%20API_files/demo.js"></SCRIPT>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk (enhanced)
+Database Caching 10/20 queries in 0.045 seconds using disk
+
+Served from: api.jquery.com @ 2010-10-20 22:12:32 --></BODY></HTML>
