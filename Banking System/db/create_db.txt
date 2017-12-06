@@ -1,0 +1,56 @@
+create Database: `bank`
+
+CREATE TABLE `acct_no` (
+  `id` int(4) NOT NULL auto_increment,
+  `acct` varchar(20) NOT NULL default '',
+  `used` varchar(10) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `acct` (`acct`)
+)
+
+INSERT INTO `acct_no` VALUES (1, '000-111-1212', 'no');
+INSERT INTO `acct_no` VALUES (2, '000-222-1212', 'no');
+INSERT INTO `acct_no` VALUES (3, '000-333-1212', 'no');
+INSERT INTO `acct_no` VALUES (4, '000-444-1212', 'no');
+INSERT INTO `acct_no` VALUES (5, '000-555-1212', 'no');
+
+---------------------------------------------------------------------
+
+CREATE TABLE `event` (
+  `id` int(4) NOT NULL auto_increment,
+  `acct` varchar(20) NOT NULL default '',
+  `depo` int(15) NOT NULL default '0',
+  `event` varchar(20) NOT NULL default '',
+  `time` varchar(30) NOT NULL default '',
+  `day` varchar(30) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+)
+
+---------------------------------------------------------------------
+
+CREATE TABLE `login` (
+  `id` int(4) NOT NULL auto_increment,
+  `acct` varchar(20) NOT NULL default '',
+  `card` varchar(30) NOT NULL default '',
+  `name` varchar(30) NOT NULL default '',
+  `pword` varchar(80) NOT NULL default '',
+  `role` varchar(8) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `acct` (`acct`),
+  UNIQUE KEY `card` (`card`)
+)
+
+---------------------------------------------------------------------
+
+CREATE TABLE `myacct` (
+  `id` int(4) NOT NULL auto_increment,
+  `acct` varchar(20) NOT NULL default '',
+  `card` varchar(30) NOT NULL default '',
+  `name` varchar(30) NOT NULL default '',
+  `depo` int(15) NOT NULL default '0',
+  `day` varchar(30) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `acct` (`acct`),
+  UNIQUE KEY `card` (`card`)
+) 
+
